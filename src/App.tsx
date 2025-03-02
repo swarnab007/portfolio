@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <motion.div 
-      className="bg-[#02021c] text-white min-h-screen"
+      className="bg-[#02021c] text-white min-h-screen px-6 pb-6" // Padding on left, right, and bottom
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
