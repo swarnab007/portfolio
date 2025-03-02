@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ExternalLink, Github } from "lucide-react";
+import gym from "../../public/gym.png";
+import ecommerce from "../../public/e-commerce.png";
+import codevue from "../../public/codevue.png";
 
 interface Project {
   title: string;
@@ -23,16 +26,23 @@ const Projects: React.FC = () => {
       title: "CodeVue",
       description:
         "Interview Management Web App designed to streamline the hiring process for organizations. It enables seamless interview scheduling, live coding sessions, role-based access, feedback management, and more.",
-      image: "../public/Codevue.png",
+      image: codevue,
       github: "https://github.com/swarnab007/codevue",
       demo: "https://codevue07.vercel.app/",
-      techStack: ["Next JS", "TypeScipt", "Clerk", "Convex", "Stream", "MailJet"],
+      techStack: [
+        "Next JS",
+        "TypeScipt",
+        "Clerk",
+        "Convex",
+        "Stream",
+        "MailJet",
+      ],
     },
     {
       title: "Fitness App",
       description:
         "A Fitness website created using to search and train any body Parts Related exercises.",
-      image: "../public/gym.png",
+      image: gym,
       github: "https://github.com/swarnab007/gym_fitness-react",
       demo: "https://gym-fitness-swarnab.vercel.app/",
       techStack: ["React", "RapidAPI", "Material-UI"],
@@ -41,10 +51,18 @@ const Projects: React.FC = () => {
       title: "E Commerce",
       description:
         "An E Commerce Website with secure user authentication, Protected Routes, Product Listing, User roles (Admin/Customer), and seamless Payment integration.",
-      image: "../public/e-commerce.png",
+      image: ecommerce,
       github: "https://github.com/swarnab007/E-Coomerce-server",
       demo: "https://watchstore-e-commerce.vercel.app/",
-      techStack: ["React", "Node.js", "Express", "MongoDB", "Stripe", "Redis", "Azure"],
+      techStack: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Stripe",
+        "Redis",
+        "Azure",
+      ],
     },
     {
       title: "Weather Website",

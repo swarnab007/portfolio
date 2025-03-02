@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Facebook, Linkedin, Github, Instagram } from "lucide-react";
+import background from "../../public/background.png"
 
 const Hero: React.FC = () => {
   const socialLinks = [
@@ -109,7 +110,7 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.05 }}
             >
               <img
-                src="../public/background.png"
+                src={background}
                 alt="Swarnab Banerjee"
                 className="w-full h-full object-cover"
               />
