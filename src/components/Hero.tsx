@@ -61,11 +61,11 @@ const Hero: React.FC = () => {
               <span className="text-[#0ef] font-semibold">
                 <TypeAnimation
                   sequence={[
-                    "Web Developer",
+                    "Full Stack Developer",
                     1000,
-                    "UI Designer",
+                    "DevOps Enthusiast",
                     1000,
-                    "Competitive Programmer",
+                    "Sofware Developer",
                     1000,
                   ]}
                   wrapper="span"
@@ -109,7 +109,7 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.05 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                src="../public/background.png"
                 alt="Swarnab Banerjee"
                 className="w-full h-full object-cover"
               />

@@ -15,18 +15,19 @@ const Skills: React.FC = () => {
   });
 
   const skills: Skill[] = [
-    { name: 'HTML', percentage: 90 },
-    { name: 'CSS', percentage: 80 },
-    { name: 'SASS', percentage: 80 },
-    { name: 'JavaScript', percentage: 75 },
+    { name: 'Node JS', percentage: 80 },
+    { name: 'TypeScript', percentage: 70 },
+    { name: 'Java', percentage: 80 },
+    { name: 'JavaScript', percentage: 90 },
     { name: 'React', percentage: 80 },
-    { name: 'Node.js', percentage: 70 },
+    { name: 'Next Js', percentage: 85 },
     { name: 'Express.js', percentage: 85 },
     { name: 'MongoDB', percentage: 60 },
-    { name: 'DSA', percentage: 75 },
-    { name: 'Java', percentage: 82 },
+    { name: 'DSA', percentage: 90 },
+    { name: 'C++', percentage: 80 },
     { name: 'Problem Solving', percentage: 85 },
-    { name: 'C++', percentage: 90 },
+    { name: 'AWS', percentage: 90 },
+    { name: 'Devops', percentage: 70 },
     { name: 'IOT', percentage: 60 },
     { name: 'Communication', percentage: 73 }
   ];

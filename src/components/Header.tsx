@@ -29,7 +29,7 @@ const Header: React.FC = () => {
 
   return (
     <motion.header 
-      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#02021c]/90 backdrop-blur-sm py-3 shadow-lg' : 'py-5'}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#02021c]/90 backdrop-blur-sm py-3 shadow-lg' : 'py-5'}`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -69,26 +69,28 @@ const Header: React.FC = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <motion.div 
-          className="fixed top-0 right-0 h-full w-[200px] bg-[#ff004f] z-50 shadow-xl"
-          initial={{ x: 200 }}
-          animate={{ x: 0 }}
+          className="fixed top-0 left-0 h-full w-full bg-[#02021c]/95 backdrop-blur-sm z-40"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="flex justify-end p-4">
+          <div className="flex justify-end p-6">
             <button onClick={toggleMenu} className="text-white">
               <X size={24} />
             </button>
           </div>
           <div className="flex flex-col items-center mt-8 space-y-6">
             {navLinks.map((link) => (
-              <a 
+              <motion.a 
                 key={link.name}
                 href={link.href} 
-                className="text-xl font-medium"
+                className="text-xl font-medium text-white hover:text-[#0ef] transition-colors"
                 onClick={toggleMenu}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
               >
                 {link.name}
-              </a>
+              </motion.a>
             ))}
           </div>
         </motion.div>
