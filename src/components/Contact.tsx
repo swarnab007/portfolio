@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
             </div>
             
             <motion.a 
-              href="../public/SWARNABBANERJEE_RESUME.pdf" 
+              href="/SWARNABBANERJEE_RESUME.pdf" 
               download
               className="inline-flex items-center px-6 py-3 bg-[#0ef] text-black font-semibold rounded-lg shadow-[0_0_20px_#0ef] hover:bg-[#0cf] hover:shadow-[0_0_40px_#0ef] transition-all duration-300"
               whileHover={{ scale: 1.05 }}
